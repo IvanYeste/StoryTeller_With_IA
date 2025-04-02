@@ -39,7 +39,7 @@ To run this project, you need a working `llama-cli.exe` (or Linux binary) compil
   ```mkdir build
     cd build
     cmake ..
-    cmake --build . --config Release
+    cmake --build . --config Release```
 
 4. **Copy the path of llama-cli.exe**
   After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
