@@ -31,17 +31,25 @@ To run this project, you need a working `llama-cli.exe` (or Linux binary) compil
    - Make sure `cmake` and your compiler (e.g., `g++`) are in your system `PATH`.
 
 2. **Clone llama.cpp:**
-   ```bash
+
    git clone https://github.com/ggerganov/llama.cpp
    cd llama.cpp
+   bash
+   
 
 3. **Compile with CMake**
-  ```mkdir build
-    cd build
-    cmake ..
-    cmake --build . --config Release```
+   
+    -mkdir build
+   
+    -cd build
+   
+    -cmake ..
+   
+    -cmake --build . --config Release
+   
 
-4. **Copy the path of llama-cli.exe**
+5. **Copy the path of llama-cli.exe**
+
   After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
 
 ## ⚙️ How It Works
