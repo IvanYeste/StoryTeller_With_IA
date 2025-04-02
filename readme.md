@@ -50,7 +50,7 @@ To run this project, you need a working `llama-cli.exe` (or Linux binary) compil
 
 5. **Copy the path of llama-cli.exe**
 
-  After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
+    After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
 
 ## ⚙️ How It Works
 
