@@ -1,0 +1,1 @@
+# Place your .gguf model file here in this folder. Example: deepseek-llm-7b-chat.Q4_K_M.gguf
