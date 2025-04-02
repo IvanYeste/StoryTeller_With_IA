@@ -36,14 +36,14 @@ To run this project, you need a working `llama-cli.exe` (or Linux binary) compil
    cd llama.cpp
 
 3. **Compile with CMake**
-  ``mkdir build
+  ```mkdir build
     cd build
     cmake ..
     cmake --build . --config Release
 
 4. **Copy the path of llama-cli.exe**
   After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
-  
+
 ## ⚙️ How It Works
 
 1. The user inputs a theme for the story.
