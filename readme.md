@@ -18,6 +18,32 @@ This is a simple console-based application written in C++ that integrates with [
 - C++17 or later
 - Windows OS (due to use of `taskkill`, `filesystem`, and `.exe` paths)
 
+## 🧱 How to Compile `llama.cpp`
+
+To run this project, you need a working `llama-cli.exe` (or Linux binary) compiled from [llama.cpp](https://github.com/ggerganov/llama.cpp). Here's how to compile it:
+
+### ✅ Windows
+
+1. **Install prerequisites:**
+   - [Git](https://git-scm.com/)
+   - [CMake](https://cmake.org/download/)
+   - [MinGW-w64](https://www.mingw-w64.org/) or [MSYS2](https://www.msys2.org/)
+   - Make sure `cmake` and your compiler (e.g., `g++`) are in your system `PATH`.
+
+2. **Clone llama.cpp:**
+   ```bash
+   git clone https://github.com/ggerganov/llama.cpp
+   cd llama.cpp
+
+3. **Compile with CMake**
+  ``mkdir build
+    cd build
+    cmake ..
+    cmake --build . --config Release
+
+4. **Copy the path of llama-cli.exe**
+  After compiling, you’ll find llama-cli.exe inside the build/bin/ directory.
+  
 ## ⚙️ How It Works
 
 1. The user inputs a theme for the story.
