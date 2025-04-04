@@ -134,7 +134,6 @@
         }
     
         file.close();
-        cout << "\Stories saved succesfully in " << filename << ".\n";
     }    
 
     bool List::isEmpty() {
@@ -182,8 +181,8 @@
     }
 
     string generateStory(const string& prompt) {
-        string llamaPath = "...../llama.cpp/build/bin/llama-cli.exe"; // PUT HERE YOUR llama-cli.exe COMPLETE PATH
-        string modelPath = "...../models/deepseek-llm-7b-chat.Q4_K_M.gguf";  // PUT HERE YOUR MODEL COMPLETE PATH
+        string llamaPath = "..."; // PUT HERE YOUR llama-cli.exe COMPLETE PATH
+        string modelPath = "...";  // PUT HERE YOUR MODEL COMPLETE PATH
         string outputFile = "output.txt";
 
         ofstream clearFile(outputFile, ios::trunc);
@@ -255,7 +254,8 @@
             cout << "\n2. Show saved stories";
             cout << "\n3. Swap two saved stories";
             cout << "\n4. Delete a story";
-            cout << "\n5. Exit";
+            cout << "\n5. Safe stories on a file";
+            cout << "\n6. Exit";
             cout << "\nChoose an option: ";
             cin >> choice;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -301,6 +301,7 @@
                 }
                 case 5: {
                     list->saveToFile("stories.txt");
+                    cout << "Stories saved succesfully!\n";
                 }
                 case 6: {
                     cout << "Goodbye!\n";
@@ -311,7 +312,7 @@
                     break;
                 }
             }
-        } while (choice != 5);
+        } while (choice != 6);
 
         delete list;
         return 0;
